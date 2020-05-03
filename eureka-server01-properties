@@ -1,0 +1,18 @@
+eureka:
+  client:
+    cn:
+      zyl:
+        service-url:
+          defaultZone: http://peer2:8762/eureka
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+    hostname: peer1
+  server:
+    enable-self-preservation: false
+server:
+  port: 8761
+spring:
+  application:
+    name: eureka-server
